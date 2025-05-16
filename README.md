@@ -21,25 +21,25 @@ temperature, humidity, and obstacle distance, sending the data over UART in JSON
 
 ```
 +-----------------------------+
-| main.cpp/.c |
-| Arduino setup() / loop() |
+| main.cpp/.c 		      |
+| Arduino setup() / loop()    |
 +-------------+---------------+
-|
-v
+	      |
+	      v
 +-------------+---------------+
-| task_manager.c |
-| Manages task scheduling |
+| task_manager.c	      |
+| Manages task scheduling     |
 +-------------+---------------+
-| |
-v v
+	| 		|
+	v		v
 +------------+ +------------------+
 | dht_sensor | | ultrasonic_sensor |
 +------------+ +------------------+
-|
-v
-+------------+
-| reporter |
-+------------+
+	      |
+	      v
+	+------------+
+	| reporter   |
+	+------------+
 
 ```
 
