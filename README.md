@@ -90,7 +90,7 @@ Add this to `platformio.ini`:
 | Echo | GPIO 12 (use voltage divider or level shifter) |
 
 # Example Serial Output
-{"temperature": 25.10,"humidity": 45.20 , "distance": 57.40} /n
+{"temperature": 25.10,"humidity": 45.20 , "distance": 57.40} 
 {"warning": "object detected!", "distance": 26.10}
 
 # Future Improvements
