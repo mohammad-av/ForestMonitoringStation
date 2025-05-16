@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "arduino.h": "c",
+        "cstdlib": "cpp",
+        "algorithm": "cpp",
+        "dht_u.h": "c",
+        "dht.h": "c",
+        "dht_sensor.h": "c"
+    },
+    "stm32-for-vscode.openOCDPath": false
+}
