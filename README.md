@@ -17,7 +17,7 @@ temperature, humidity, and obstacle distance, sending the data over UART in JSON
 
 ---
 
-## 📖 Software Architecture
+# Software Architecture
 
 ```
 +-----------------------------+
@@ -43,7 +43,7 @@ temperature, humidity, and obstacle distance, sending the data over UART in JSON
 
 ```
 
-## 📂 Project Structure
+# Project Structure
 
 ```
 src/
