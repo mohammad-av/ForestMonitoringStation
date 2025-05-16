@@ -17,40 +17,47 @@ temperature, humidity, and obstacle distance, sending the data over UART in JSON
 
 ---
 
-## Software Architecture
+## 📖 Software Architecture
+
+```
 +-----------------------------+
-|        main.cpp/.c          |
-|  Arduino setup() / loop()   |
+| main.cpp/.c |
+| Arduino setup() / loop() |
 +-------------+---------------+
-              |
-              v
+|
+v
 +-------------+---------------+
-|        task_manager.c        |
-|     Manages task scheduling  |
+| task_manager.c |
+| Manages task scheduling |
 +-------------+---------------+
-      |                 |
-      v                 v
-+------------+   +------------------+
-| dht_sensor |   | ultrasonic_sensor |
-+------------+   +------------------+
-      |
-      v
+| |
+v v
++------------+ +------------------+
+| dht_sensor | | ultrasonic_sensor |
++------------+ +------------------+
+|
+v
 +------------+
-|  reporter  |
+| reporter |
 +------------+
 
-## Project Structure
+```
+
+## 📂 Project Structure
+
+```
 src/
-├── main.cpp               → Arduino setup() and loop()
-├── main.c                 → c_setup() and c_loop()
-├── task_manager.c/.h      → Task scheduling and timers
-├── timer.c/.h             → Simple software timers (millis-based)
-├── dht_sensor.cpp/.h      → DHT22 management module
+├── main.cpp → Arduino setup() and loop()
+├── main.c → c_setup() and c_loop()
+├── task_manager.c/.h → Task scheduling and timers
+├── timer.c/.h → Simple software timers (millis-based)
+├── dht_sensor.cpp/.h → DHT22 management module
 ├── ultrasonic_sensor.c/.h → SRF05 management module
-├── reporter.c/.h          → JSON logging and UART reporting
-├── sensor_interface.h     → Sensor interface definition
-platformio.ini             → PlatformIO project configuration
+├── reporter.c/.h → JSON logging and UART reporting
+├── sensor_interface.h → Sensor interface definition
+platformio.ini → PlatformIO project configuration
 
+```
 
 # Requirements:
 - ESP32 DevKit V1 board  
