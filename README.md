@@ -92,6 +92,7 @@ Add this to `platformio.ini`:
 # Example Serial Output
 {"temperature": 25.10,"humidity": 45.20 , "distance": 57.40} 
 {"warning": "object detected!", "distance": 26.10}
+ - See screen record folder
 
 # Future Improvements
 - Smarter logs (status classification and event counting)
